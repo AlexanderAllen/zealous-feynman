@@ -12,7 +12,13 @@
       "request": "launch",
       "name": "Launch Transpiled TS",
       "skipFiles": ["<node_internals>/**"],
-      "preLaunchTask": "tsc: build - tsconfig.json",
+
+      // Manual mode transpilation.
+      // "preLaunchTask": "tsc: build - tsconfig.json",
+
+      // Transpile via tasks and NPM.
+      "preLaunchTask": "${defaultBuildTask}",
+
       // PROGRAM should point to the NON-TRANSPILED sauce.
       "program": "${workspaceFolder}/src/app.ts",
       // OUTFILES  should point to the TRANSPILED sauce.

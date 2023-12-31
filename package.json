@@ -67,9 +67,9 @@
     ]
   },
   "scripts": {
-    "pretest": "eslint .",
+    "lint": "eslint .",
     "test": "jest",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc --watch --project ./"
   },
   "repository": "AlexanderAllen/zealous-feynman",
   "jest": {
