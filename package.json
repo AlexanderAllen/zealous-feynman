@@ -71,7 +71,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "watch": "tsc --watch --project ./"
+    "watch": "tsc --watch --project ./",
+    "build": "tsc --project ./"
   },
   "repository": "AlexanderAllen/zealous-feynman",
   "bin": "dist/app.js",

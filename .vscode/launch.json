@@ -31,9 +31,17 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch JS",
+      "name": "Test Jest",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/lib/index.js"
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      "args": [
+        "-i"
+      ],
+      "preLaunchTask": "npm: build",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outFiles": [
+        "${workspaceRoot}/dist/**/*"
+      ],
     },
   ]
 }
