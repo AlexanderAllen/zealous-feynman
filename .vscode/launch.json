@@ -7,9 +7,21 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Launch Transpiled TS",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/dist/app.js",
+      "outFiles": [
+        "${workspaceFolder}/dist/*.js",
+        "!**/node_modules/**"
+      ],
+      "sourceMaps": true,
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch JS",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/lib/index.js"
-    }
+    },
   ]
 }
