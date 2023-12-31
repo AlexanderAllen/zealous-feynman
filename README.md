@@ -1,18 +1,18 @@
 # zealous-feynman [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
+>
 
 ## Installation
 
 ```sh
-$ npm install --save zealous-feynman
+git clone repo
+npm install --save-dev
 ```
 
 ## Usage
 
 ```js
-const zealousFeynman = require('zealous-feynman');
-
-zealousFeynman('Rainbow');
+npm run build
+npx jest
 ```
 ## License
 
