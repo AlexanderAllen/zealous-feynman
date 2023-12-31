@@ -74,9 +74,6 @@
     "watch": "tsc --watch --project ./"
   },
   "repository": "AlexanderAllen/zealous-feynman",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "bin": "dist/app.js",
   "license": "GPL-3.0"
 }
