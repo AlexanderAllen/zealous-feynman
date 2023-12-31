@@ -15,6 +15,7 @@
         "!**/node_modules/**"
       ],
       "sourceMaps": true,
+      "preLaunchTask": "${defaultBuildTask}",
     },
     {
       "type": "node",
